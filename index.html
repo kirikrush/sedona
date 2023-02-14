@@ -6,57 +6,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sedona</title>
 </head>
-<body>
-   <header>
-    <nav>
-        <img src="img/logo.svg" width="139px" height="70" alt="Логотип">
-        <ul>
-            <li><a>Главная</a></li>
-            <li><a href="blank.html">О Седоне</a></li>
-            <li><a href="blank.html">Гостиницы</a></li>
-            <li><a href="blank.html">Поиск</a></li>
-            <li><a href="blank.html">Избранное</a></li>
-        </ul>
-        <button>Хочу сюда</button> 
-        <!-- стоит ли кнопку и пункты Поиск избранное оборачивать ul?  -->
+<body class="page-body">
+   <header class="main-header">
+    <nav class="main-navigation">
+        <a class="main-header-logo">
+            <img src="img/logo.svg" width="139px" height="70" alt="Логотип Седоны">
+         </a>
+         <div class="main-header-bar">
+            <div class="main-navigation-wrapper">
+                <ul class="site-navigation">
+                    <li><a>Главная</a></li>
+                    <li><a href="blank.html">О Седоне</a></li>
+                    <li><a href="blank.html">Гостиницы</a></li>
+                </ul>
+                <div class="user-navigation">
+                    <a href="blank.html">Поиск</a></li>
+                    <a href="blank.html">Избранное</a></li>
+                    <button class="button">Хочу сюда</button> 
+                </div>
+            </div>
+        </div>
     </nav>
    </header> 
-   <main>
-    <section>
-        <!-- <img src="img/welcome.svg" width="458" height="350" alt="Welcome">
-        <img src="img/index-background.png" width="1200" height="485" alt="decorative img">  -->
-    </section>
 
-    <section>
+   <main class="container">
+
+    <!-- <section>
+        <img src="img/welcome.svg" width="187,7px" height="44,7px" alt="Welcome">
+        <img src="./img/georgies.svg" width="256px" height="28,78px" alt="gargeous">
+        <img src="./img/Sedona.png" width="456,7px" height="212,77px" alt="Better then Grand Canyon">
+    </section> -->
+
+    <section class="description">
         <h2>Седона — небольшой городок в Аризоне,<br>
             заслуживающий большего!</h2>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </section>
 
-    <section>
+    <section class="features">
         <h2>Преимущества</h2>
-        <ul>
-            <li>Настоящий городок</li>
-            <!-- <li><img src="img/street.png" width="800" height="384" alt="street"></li> -->
-            <li>Жилье</li>
-            <li>Еда</li>
-            <li>Сувениры</li>
-            <!-- <li><img src="img/mountains.png" width="800" height="384" alt="mountains"></li> -->
-            <li>там есть мост дьявола</li>
-            <li>небольшая площадь</li>
-            <li>красивая дорога</li>
-            <li>мало туристов</li>
+        <ul class="features-list">
+            <li class="features-item">
+                <h2>настоящий городок</h2>
+                <p>— №1 —</p>
+                <p>Седона — не аттракцион для туристов, там течёт 
+                своя жизнь</p>
+            </li>
+            <li class="features-item">
+                <img src="img/street.png" width="800" height="384" alt="street">
+            </li>
+            <li class="features-item">
+                <h2>жилье</h2>
+                <img src="" width="" height="" alt="Жилье в Седоне">
+                <P>Рекомендуем пожить в настоящем мотеле, 
+                    всё как в кино!</P>
+            </li>
+            <li class="features-item">
+                <h2>еда</h2>
+                <img src="" width="" height="" alt="Еда в Седоне">
+                <p>Всегда заказывайте
+                    топовый фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+            <li class="features-item">
+                <h2>сувениры</h2>
+                <img src="" width="" height="" alt="Сувениры в Седоне">
+                <p>Не только китайского, 
+                    но и настоящего местного производства!</p>
+            </li>
+            <li class="features-item">
+                <img src="img/mountains.png" width="800" height="384" alt="mountains">
+            </li>
+            <li class="features-item">
+                <h2>там есть мост дьявола</h2>
+                <p>— №2 —</p>
+                <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            </li>
+            <li class="features-item">
+                <p>небольшая площадь</p>
+                <p>— №3 —</p>
+                <p>Все достопримечательности находятся очень близко</p>
+            </li>
+            <li class="features-item">       
+                <p>красивая дорога</p>
+                <p>— №4 —</p>
+                <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </li>
+            <li class="features-item">   
+                <p>мало туристов</p>
+                <p>— №5 —</p>
+                <p>Большинство едет в Гранд Каньон и толпится там</p>
+            </li>
         </ul>
     </section>
-<!-- в какой тег лучше обернуть 10 однотипных блоков в центре страницы? -->
-    <section>
+
+    <section class="search">
         <h2>Заинтересовались?</h2>
             <p>Укажите предполагаемые даты поездки,<br>
                 и мы покажем вам лучшие предложения гостиниц в седоне</p>
-                  <button>поиск гостиницы в седоне</button>          
+                  <button class="button">поиск гостиницы в седоне</button>          
     </section>
 
-    <section>
+    <div class="search-mode">
+        <h2>Поиск гостиницы в Седоне</h2>
+        <img src="./img/cross.png" width="15px" height="" alt="Закрыть">
+            <p>
+                <label for="tour-param-arrival">Дата заезда:</label>
+                <input type="text" value="27 апреля 2020" id="tour-param-arrival">
+            </p>
+            <p>
+                <label for="tour-param-departure">Дата выезда:</label>
+                <input type="text" value="1 сентября 2021" id="tour-param-departure">
+            </p>
+            <p>
+                <label for="adult">Взрослые:</label>
+                <input id="adult" type="number" value="2">
+            </p>
+            <p>
+                <label for="children">Дети:</label>
+                <input id="children" type="number" value="1">
+            </p>
+            <p>
+                <button>Найти</button>
+            </p>
+    </div>
+    <section class="subscription">
         <h2>подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама,<br>
             честное бойскаутское!</p>
@@ -67,31 +140,31 @@
     </section>
    </main>
 
-   <footer>
-    <section>
+   <footer class="main-footer">
+    <section class="footer-social">
         <ul>
             <li>
-               <a href="#">
+               <a class="social-button" href="#">
                   <img src="img/twitter.png" width="18" height="14.96" alt="twitter">
                </a>
             </li>
             <li>
-               <a href="#">
+               <a class="social-button" href="#">
                   <img src="img/facebook.png" width="10" height="18" alt="facebook">
                </a>
             </li>
             <li>
-               <a href="#">
+               <a class="social-button" href="#">
                   <img src="img/youtube.png" width="20,1" height="16" alt="youtube">
                </a>
             </li>
          </ul>
     </section>
 
-        <section>
+        <section class="contacts">
             <a href="tel:+78121212">+7 (812) 812-12-12</a>
-                <a href="" target="blank">
-                    <img src="img/logo-htmlacademy.svg" width="115" height="34" alt="Логотип">
+                <a class="footer-phone" href="#" target="blank">
+                    <img src="img/logo-htmlacademy.svg" width="115" height="34" alt="Логотип html academy">
                 </a>
         </section>
    </footer>
