@@ -25,8 +25,10 @@
                     <li><a>Гостиницы</a></li>
                 </ul>
                 <div class="user-navigation">
-                    <a href="blank.html"><img src="/img/Поиск.png" width="42px" height="66px"></a></li>
-                    <a href="blank.html"><img src="/img/Избранное.png" width="42px" height="66px"></a></li>
+                    <a href="blank.html"><img src="/img/Поиск.svg"></a>
+                    <a href="blank.html"><img class="user-navigation-liked" src="/img/favorite.svg">
+                        <span class="user-navigation-favorite">12</span>
+                    </a>
                     <button>Хочу сюда</button>
                 </div>
             </nav>
@@ -107,35 +109,45 @@
 
     <section class="search">
         <div>
-            <h2>Заинтересовались?</h2>
+            <h2 class="search-header">Заинтересовались?</h2>
             <p>Укажите предполагаемые даты поездки,<br>
                 и мы покажем вам лучшие предложения гостиниц в седоне</p>
-            <button class="button">поиск гостиницы в седоне</button>
+            <button class="search-button">поиск гостиницы в седоне</button>
         </div>
 
-        <!-- <form action="" method="post"> 
-    <div class="search-mode">
-        <h2>Поиск гостиницы в Седоне</h2>
-        <button>Закрыть</button>
-            <div>
-                <label for="tour-param-arrival">Дата заезда:</label>
-                <input type="text" value="27 апреля 2020" id="tour-param-arrival">
-            </div>
-            <div>
-                <label for="tour-param-departure">Дата выезда:</label>
-                <input type="text" value="1 сентября 2021" id="tour-param-departure">
-            </div>
-            <div>
-                <label for="adult">Взрослые:</label>
-                <button><input id="adult" type="number" value="2"></button>
-            </div>
-            <div>
-                <label for="children">Дети:</label>
-                <button><input id="children" type="number" value="1"></button>
-            </div>          
-                <button>Найти</button>
-    
-    </form> -->
+        <div class="modal">
+            <form class="search-mode" action="" method="post">
+                <div class="search-mode-parameters">
+                    <h2>Поиск гостиницы в Седоне</h2>
+                    <button class="search-button-close"></button>
+                    <div class="search-date">
+                        <label for="tour-param-arrival">Дата заезда:</label>
+                        <input type="text" value="27 апреля 2020" id="tour-param-arrival">
+                        <button class="search-date-button" style="width: 15px; height: 15px;"><img src="./img/date 1.svg"></button>
+                    </div>
+                    <div class="search-date">
+                        <label for="tour-param-departure">Дата выезда:</label>
+                        <input type="text" value="1 сентября 2021" id="tour-param-departure">
+                        <button class="search-date-button" style="width: 15px; height: 15px;"><img src="./img/date 1.svg"></button>
+                    </div>
+                    <div class="search-guests">
+                        <label for="adult">Взрослые:</label>
+                        <button class="less"></button>
+                        <input id="adult" type="number" value="2">
+                        <button class="more"></button>
+                    </div>
+                    <div class="search-guests">
+                        <label for="children">Дети:</label>
+                        <button></button>
+                        <input id="children" type="number" value="1">
+                        <button></button>
+                    </div>
+                    <button class="search-button-find">Найти</button>
+                </div>
+            </form>
+            <div class="overlay"></div>
+        </div>
+
     </section>
     <section class="subscription">
         <h2>подпишитесь на рассылку</h2>
