@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/zerostyles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
@@ -132,15 +132,19 @@
                     </div>
                     <div class="search-guests">
                         <label for="adult">Взрослые:</label>
-                        <button class="less"></button>
-                        <input id="adult" type="number" value="2">
-                        <button class="more"></button>
+                        <div class="search-guests__aramount">
+                            <button class="less"></button>
+                            <input id="adult" type="text" value="2">
+                            <button class="more"></button>
+                        </div>
                     </div>
                     <div class="search-guests">
-                        <label for="children">Дети:</label>
-                        <button></button>
-                        <input id="children" type="number" value="1">
-                        <button></button>
+                        <label class="search-guests__children" for="children">Дети:</label>
+                        <div class="search-guests__aramount">
+                            <button class="less"></button>
+                            <input id="children" type="text" value="1">
+                            <button class="more"></button>
+                        </div>
                     </div>
                     <button class="search-button-find">Найти</button>
                 </div>
