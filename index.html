@@ -124,11 +124,13 @@
                         <label for="tour-param-arrival">Дата заезда:</label>
                         <input type="text" value="27 апреля 2020" id="tour-param-arrival">
                         <button class="search-date-button" style="width: 15px; height: 15px;"><img src="./img/date 1.svg"></button>
+                        <small class="search-date__error">Мы не можем отправить вас в прошлое.</small>
                     </div>
                     <div class="search-date">
                         <label for="tour-param-departure">Дата выезда:</label>
                         <input type="text" value="1 сентября 2021" id="tour-param-departure">
                         <button class="search-date-button" style="width: 15px; height: 15px;"><img src="./img/date 1.svg"></button>
+                        <small class="search-date__free">На эти даты есть свободные номера. Пока есть.</small>
                     </div>
                     <div class="search-guests">
                         <label for="adult">Взрослые:</label>
@@ -140,6 +142,7 @@
                     </div>
                     <div class="search-guests">
                         <label class="search-guests__children" for="children">Дети:</label>
+                        <small class="children-info">Укажите количество детей,<br> которые будут с вами, возраст <br> которых от 6 до 18 лет. Дети <br> до 6 лет размещаются <br> бесплатно.</small>
                         <div class="search-guests__aramount">
                             <button class="less"></button>
                             <input id="children" type="text" value="1">
@@ -200,17 +203,20 @@
 <script>
     const bookButton = document.querySelector(".header-button")
     const popup = document.querySelector(".modal");
-    // const login = popup.querySelector("[name=login]")
-    // const password = popup.querySelector("[name=password]")
-    // const storage = localStorage.getItem("login")
-    // form.addEventListener("submit", function (evt) {
-    //     if (!login.value || !password.value) {
-    //         evt.preventDefault();
-    //         popup.classList.add("modal-error")
-    //     } else {
-    //     localStorage.setItem("login", login.value)
-    // }
-    // popup.style.display = "block";
+    const modalChildren = document.querySelector(".search-guests__children");
+    const modalInfo = document.querySelector(".children-info");
+    
+    modalChildren.addEventListener("mouseover", function(evt) {
+        evt.preventDefault();
+        modalInfo.style.display = 'block';
+        
+    });
+
+    modalChildren.addEventListener("mouseout", function(evt) {
+        evt.preventDefault();
+        modalInfo.style.display = 'none';
+        
+    });
     bookButton.addEventListener("click", function(evt) {
         evt.preventDefault();
         popup.classList.add("modal-show");
